@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  grid-area: header;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+nav{
+  grid-area: nav;
+  background-color: #206df2; 
+}
+ nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
   color: white;
+  font-size: 1.2rem;
+ }
+
+ nav ul li{
+   cursor: pointer;
+ }
+section{
+  grid-area: section;
 }
 
-.App-link {
-  color: #61dafb;
+footer{
+  grid-area: footer;
+}
+.container{
+  display: grid;
+  gap:20px;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 5% 50% 20%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
+  height: 100vh;
+  background-image: linear-gradient(white, #569ff7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header p{
+  color: #f03a3a;
+  font-size: 3rem;
+  vertical-align: center;
+  width: min-content;
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    grid-template-rows: 20% 20% 50% 10%;
+
+  }
+
+  header{
+    flex-direction: column;
   }
 }
