@@ -1,25 +1,169 @@
-
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto";
-}
-header{
-  grid-area: header;
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  height: 35%;
+  background-position: center;
+  background-size: cover !important;
+  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9) ),url("./assets/banner.jpeg");
 }
 
+.container-fluid {
+  font-family: 'Alata', sans-serif;
+  
+}
+.card-body{
+  padding: 1rem;
+}
+.brand__name {
+  align-self: center;
+}
+.section-container{
+  padding: 0px 0px 60px 0px;
+  background-color: rgb(11,122,188);
+  margin: -20px;
+}
+
+.section-container h2{
+  padding: 30px 0px 30px 0px;
+  color: aliceblue;
+}
+
+.col{
+  padding: 0px;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bigcard__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headline {
+  text-align: center;
+  margin: 20px auto;
+  font-family: 'Alata', sans-serif;
+  /* color: #1556a1; */
+ color: aliceblue;
+  ;
+}
+
+.card-img {
+  background-image: linear-gradient( rgb(230, 220, 220),rgb(207, 199, 199));
+  opacity: 0.8;
+}
+a,a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  text-align:center;
+  background-color: white;
+  height: 1%;
+}
+.big-card{
+  margin: 5px;
+  color: white;
+  border: none;
+}
+.small-card {
+  margin: 5px;
+  color: black;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* background-color: #007bff; */
+  background-color: white;
+}
+.small-card:hover{
+  background-color: whitesmoke;
+  color: black;
+  border: 0.1px solid rgb(200, 198, 198);
+
+}
+.card{
+  border: none;
+}
+.doc-card__container{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.card-title{
+  text-align: center;
+}
+
+.contact-us__container{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.brand-title {
+  /* color: #f03a3a; */
+  color: rgb(11,122,188);
+  vertical-align: center;
+  width: min-content;
+  font-size: 2.8rem;
+  font-family: 'Holtwood One SC', serif;
+}
+
+.bg {
+  height: 1100px;
+  width: 100%;
+  /* background-image: linear-gradient(white, #569ff7); */
+}
+
+.brand__moto {
+  font-family: 'Alata', sans-serif;
+  background-color: #007bff;
+  color: white;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+.timings{
+  position: sticky;
+  top:0;
+  z-index: 100;
+}
+.info__btn {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 80px;
+  flex-wrap: wrap;
+  background-color: rgb(240, 240, 185);
+  color: black;
+  font-size: small;
+  border-radius: 20px;
+}
+
+.timings p{
+  margin: 0px;
+}
 nav{
-  grid-area: nav;
-  background-color: #206df2; 
+  /* background-color: rgb(11,122,188);  */
+  background-color: darkseagreen;
+  font-family: 'Alata',sans-serif;
 }
  nav ul{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
   padding: 10px;
   color: white;
@@ -29,44 +173,32 @@ nav{
  nav ul li{
    cursor: pointer;
  }
-section{
-  grid-area: section;
+
+.btn__know-more {
+  border-radius: 50%;
+  background-color: white;
 }
 
-footer{
-  grid-area: footer;
+.form-container{
+  margin: auto;
+  width: 40%;
 }
-.container{
-  display: grid;
-  gap:20px;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 5% 50% 20%;
-  grid-template-areas:
-    "header"
-    "nav"
-    "section"
-    "footer";
-  height: 100vh;
-  background-image: linear-gradient(white, #569ff7);
-}
-
-header p{
-  color: #f03a3a;
-  font-size: 3rem;
-  vertical-align: center;
-  width: min-content;
+.floating-text {
+  background-color: #f03a3a;
+  width: 180px;
+  height: 40px;
+  color: yellow;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 6px;
+  z-index: 100;
+  top: 0;
+  position: sticky;
+  margin-left: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   nav ul {
-    flex-direction: column;
-  }
-  .container{
-    grid-template-rows: 20% 20% 50% 10%;
-
-  }
-
-  header{
     flex-direction: column;
   }
 }
