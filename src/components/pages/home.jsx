@@ -2,12 +2,11 @@ import treatment from "../../assets/treatment.jpeg";
 import modality from "../../assets/modalities.jpeg";
 import { Footer } from "../footer";
 import { BigCardComponent } from "../bigCard";
-import { Treatments } from "../treatments";
-import { Modalities } from "../modalities";
 import { MeetYourDoctors } from "../doctors";
 import { ContactUs } from "../contactUs";
 import { BookAppointment } from "../bookAppointment";
-import {Row,Col,Container} from "react-bootstrap"
+import {Row,Col,Container} from "react-bootstrap";
+import { Services } from "./services";
 export function Home() {
   const data = [
     {
@@ -35,13 +34,9 @@ export function Home() {
         <BigCardComponent data={data} />
       </div>
       <div className="section-container">
-        <h2 className="headline">Our Treatments</h2>
-        <Treatments />
+        <Services/>
       </div>
-      <div className="section-container">
-        <h2 className="headline">Available Modalities</h2>
-        <Modalities />
-      </div>
+      
       <div className="section-container" style={{"background-color":"white"}}>
         <h2 className="headline" style={{ color:"grey"}}>Meet your Doctors</h2>
         <MeetYourDoctors />
