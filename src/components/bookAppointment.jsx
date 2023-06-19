@@ -2,6 +2,10 @@ import { Form, Button } from "react-bootstrap";
 
 export function BookAppointment() {
 
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+  }
+
   return (
     <div className="form-container">
 <Form>
@@ -20,7 +24,7 @@ export function BookAppointment() {
       </Form.Group>
 
     <div style={{"margin":"20px auto auto auto",width:"130px"}}>
-    <Button variant="success" type="submit">
+    <Button variant="success" type="submit" onClick={handleSubmit}>
         Book Now
       </Button>
     </div>

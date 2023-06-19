@@ -16,6 +16,7 @@ header {
 }
 .brand__name {
   align-self: center;
+  margin-left: 10px;
 }
 .section-container{
   padding: 0px 0px 60px 0px;
