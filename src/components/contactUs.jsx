@@ -1,7 +1,8 @@
 import { FaPhone } from "react-icons/fa";
 export function ContactUs() {
   return (
-    <div>
+    <div className="section-container">
+    <h2 className="headline">Contact Us</h2>
       <div className="contact-us__container">
         <div>
           <h5>Our Clinic</h5>
@@ -30,6 +31,6 @@ export function ContactUs() {
           ></iframe>
         </div>
       </div>
-    </div>
+      </div>
   );
 }

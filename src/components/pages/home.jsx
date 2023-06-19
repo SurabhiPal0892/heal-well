@@ -45,10 +45,9 @@ export function Home() {
         <h2 className="headline" style={{ color:"grey"}}>Book Appointment</h2>
         <BookAppointment />
       </div>
-      <div className="section-container">
-        <h2 className="headline">Contact Us</h2>
+     
         <ContactUs />
-      </div>
+      
     <Footer/>      </Col>
     </Row>
   </Container>
