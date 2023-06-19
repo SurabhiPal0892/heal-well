@@ -211,3 +211,12 @@ nav{
 .contact-us__container >div> p{
   color: white;
 }
+
+.doctor-details>p{
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.doctor-name{
+  color:#007bff;
+}
