@@ -10,8 +10,8 @@ export function MeetYourDoctors() {
       <Card style={{ width: "25rem" }}>
         <Card.Img variant="top" src={doc1} />
         <Card.Body>
-          <Card.Title>S. Maj RAJESH KUMAR PAL</Card.Title>
-          <Card.Text>
+          <Card.Title className="doctor-name">S. Maj RAJESH KUMAR PAL</Card.Title>
+          <Card.Text className="doctor-details">
             <p>MAIAP DPT DOT AFMS</p>
             <p>Retd. Army Physiotherapist</p>
           </Card.Text>
