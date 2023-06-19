@@ -7,6 +7,8 @@ export function BookAppointment() {
   }
 
   return (
+    <div className="section-container" style={{"background-color":"aliceblue"}}>
+    <h2 className="headline" style={{ color:"grey"}}>Book Appointment</h2>
     <div className="form-container">
 <Form>
       <Form.Group controlId="formBasicName">
@@ -31,6 +33,6 @@ export function BookAppointment() {
      
     </Form>
     </div>
-    
+    </div>
   );
 }

@@ -4,6 +4,8 @@ import doc2 from "../assets/doc2.jpeg";
 
 export function MeetYourDoctors() {
   return (
+    <div className="section-container" style={{"background-color":"white"}}>
+    <h2 className="headline" style={{ color:"grey"}}>Meet your Doctors</h2>
     <div className="doc-card__container">
       <Card style={{ width: "25rem" }}>
         <Card.Img variant="top" src={doc1} />
@@ -25,6 +27,7 @@ export function MeetYourDoctors() {
           </Card.Text>
         </Card.Body>
       </Card>
+    </div>
     </div>
   );
 }
