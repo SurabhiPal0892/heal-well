@@ -203,3 +203,11 @@ nav{
     flex-direction: column;
   }
 }
+
+h5{
+  color: lightgray;
+}
+
+.contact-us__container >div> p{
+  color: white;
+}
