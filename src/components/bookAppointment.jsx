@@ -1,9 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 
 export function BookAppointment() {
-  const handleChange = () => {};
 
-  const handleSubmit = () => {};
   return (
     <div className="form-container">
 <Form>

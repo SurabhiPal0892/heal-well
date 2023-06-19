@@ -1,8 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./components/header";
-import { Section } from "./components/section";
-import { Footer } from "./components/footer";
-import { Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import { Home } from "./components/pages/home";
 import { BrowserRouter,Route,Routes } from "react-router-dom";

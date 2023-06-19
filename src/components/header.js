@@ -1,5 +1,5 @@
 import { NavComponent } from "./nav";
-import { FaEnvelope, FaClock, FaSun, FaMoon } from "react-icons/fa";
+import { FaClock, FaSun, FaMoon } from "react-icons/fa";
 export function Header() {
   return (
     <>

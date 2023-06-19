@@ -1,4 +1,3 @@
-import { FaEnvelope, FaClock, FaSun,FaMoon } from "react-icons/fa";
 import treatment from "../../assets/treatment.jpeg";
 import modality from "../../assets/modalities.jpeg";
 import { Footer } from "../footer";
