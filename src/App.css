@@ -210,6 +210,8 @@ nav{
 
 .contact-us__container >div> p{
   color: white;
+  margin-top: 0px;
+  font-size: 14px;
 }
 
 .doctor-details>p{
